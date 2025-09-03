@@ -1,0 +1,24 @@
+{
+  "name": "kka-equipment-repairs",
+  "version": "1.0.0",
+  "description": "Create records of repairs for equipments in a small-sized tailoring shop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rkterungwa16/kka-equipment-repairs.git"
+  },
+  "keywords": [
+    "tailoring",
+    "equipment",
+    "parts"
+  ],
+  "author": "Terungwa Kombol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rkterungwa16/kka-equipment-repairs/issues"
+  },
+  "homepage": "https://github.com/rkterungwa16/kka-equipment-repairs#readme"
+}
