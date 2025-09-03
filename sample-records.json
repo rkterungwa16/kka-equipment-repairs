@@ -1,0 +1,62 @@
+[
+  {
+    "equipment": "Sewing Machine",
+    "serial": "SM-001",
+    "lastMaintenanceDate": "2025-07-01",
+    "issueReported": "Needle breakage",
+    "repairDone": "Needle replaced, oiled parts",
+    "nextDueDate": "2025-10-01",
+    "technician": "John (Technician)",
+    "notes": "Runs smoothly"
+  },
+  {
+    "equipment": "Overlock Machine",
+    "serial": "OL-001",
+    "lastMaintenanceDate": "2025-06-15",
+    "issueReported": "Thread tension off",
+    "repairDone": "Adjusted tension, cleaned dust",
+    "nextDueDate": "2025-09-15",
+    "technician": "Mary (In-house)",
+    "notes": "Check knives next time"
+  },
+  {
+    "equipment": "Steam Iron",
+    "serial": "IR-001",
+    "lastMaintenanceDate": "2025-07-20",
+    "issueReported": "Water leakage",
+    "repairDone": "Tank replaced, cleaned plate",
+    "nextDueDate": "2025-10-20",
+    "technician": "Supplier Service",
+    "notes": "Avoid hard water"
+  },
+  {
+    "equipment": "Cutting Table",
+    "serial": "CT-001",
+    "lastMaintenanceDate": "2025-05-01",
+    "issueReported": "Wobbly leg",
+    "repairDone": "Bolts tightened",
+    "nextDueDate": "2026-05-01",
+    "technician": "Self",
+    "notes": "Stable now"
+  },
+  {
+    "equipment": "Fabric Scissors",
+    "serial": "SC-001",
+    "lastMaintenanceDate": "2025-08-01",
+    "issueReported": "Blunt edges",
+    "repairDone": "Sharpened",
+    "nextDueDate": "2026-02-01",
+    "technician": "Local sharpener",
+    "notes": "Keep separate from paper"
+  },
+  {
+    "equipment": "Dress Form",
+    "serial": "DF-001",
+    "lastMaintenanceDate": "2025-01-01",
+    "issueReported": "Loose stand",
+    "repairDone": "Stand fixed",
+    "nextDueDate": "2026-01-01",
+    "technician": "Self",
+    "notes": "For light fabrics only"
+  }
+]
