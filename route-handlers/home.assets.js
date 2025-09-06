@@ -1,0 +1,57 @@
+const path = require("path");
+
+const { asyncReadFile } = require("../utils");
+
+const HomeAssets = async (req, res) => {
+  const sendError = function (message, code) {
+    // res.writeHead(code || 404, {'Content-Type': 'text/html'});
+    res.end(message);
+  };
+  const serve = function (file) {
+    let contentType;
+    switch (file.ext.toLowerCase()) {
+      case "css":
+        contentType = "text/css";
+        break;
+      case "html":
+        contentType = "text/html";
+        break;
+      case "js":
+        contentType = "application/javascript";
+        break;
+      case "ico":
+        contentType = "image/ico";
+        break;
+      case "json":
+        contentType = "application/json";
+        break;
+      case "jpg":
+        contentType = "image/jpeg";
+        break;
+      case "jpeg":
+        contentType = "image/jpeg";
+        break;
+      case "png":
+        contentType = "image/png";
+        break;
+      default:
+        contentType = "text/plain";
+    }
+    res.writeHead(200, { "Content-Type": contentType });
+    res.end(file.content);
+  };
+  try {
+    const urlPath = path.join(__dirname, `/../${req.url}`);
+    const data = await asyncReadFile(urlPath);
+    serve({
+      ext: urlPath.split(".").pop(),
+      content: data,
+    });
+  } catch (e) {
+    throw new Error("Could not find file");
+  }
+};
+
+module.exports = {
+  HomeAssets,
+};
