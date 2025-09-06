@@ -1,5 +1,54 @@
+/* Modules */
+@import "./button.css";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  --breakpoint-max-width-sm: 540px;
+  --breakpoint-max-width-md: 720px;
+  --breakpoint-max-width-lg: 960px;
+  --breakpoint-max-width-xl: 1140px;
+  --breakpoint-max-width-2xl: 1320px;
+
+  --spacing-xs: 0.125rem;
+  --spacing-sm: 0.25rem;
+  --spacing-md: 0.5rem;
+  --spacing-lg: 1rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 4rem;
+
+  --button-width-xs: 5.375rem;
+  --button-width-sm: 6.3125rem;
+  --button-width-md: 6.8125rem;
+  --button-width-l: 7.5rem;
+  --button-width-xl: 8.5rem;
+
+  --color-primary: #7a5cfa;
+  --color-gray: #666666;
+  --color-gray-2: #8e8e93;
+  --color-gray-3: #cccccc;
+  --color-gray-6: #f4f4f4;
+  --color-black: #212631;
+  --color-white: #ffffff;
+  --color-red: #ff383c;
+  --color-blue: #3399ff;
+}
+
 body {
-  font-family: Arial, sans-serif;
   margin: 20px;
   background: #f9f9f9;
 }
@@ -25,16 +74,7 @@ datalist {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-button {
-  background: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-  margin-right: 10px;
-}
-button:hover {
-  background: #0056b3;
-}
+
 table {
   width: 100%;
   border-collapse: collapse;

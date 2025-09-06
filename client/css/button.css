@@ -1,0 +1,46 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  font-size: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: 0.15s ease-out;
+}
+
+.btn-contained {
+  background: #7a5cfa;
+  color: white;
+}
+
+.btn-contained:hover {
+  background: #ffffff;
+  border: 1px solid #7a5cfa;
+  color: #7a5cfa;
+}
+
+.btn-contained-xs {
+  min-width: 5.375rem;
+  min-height: 1.5rem;
+}
+
+.btn-contained-sm {
+  min-width: 6.3125rem;
+  min-height: 2.125rem;
+}
+
+.btn-contained-md {
+  min-width: 6.8125rem;
+  min-height: 2.375rem;
+}
+
+.btn-contained-l {
+  min-width: 7.5rem;
+  min-height: 2.625rem;
+}
+
+.btn-contained-xl {
+  min-width: 8.5rem;
+  min-height: 3.125rem;
+}
