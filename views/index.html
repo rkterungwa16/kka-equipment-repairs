@@ -1,66 +1,76 @@
-<h2>Tailoring Shop Equipment Maintenance Tracker</h2>
+<div class="container-md">
+  <h2>Tailoring Shop Equipment Maintenance Tracker</h2>
 
-<form id="maintenanceForm">
-  <label>Equipment:</label>
-  <select id="equipment" required>
-    <option value="">-- Select Equipment --</option>
-    <option value="Sewing Machine">Sewing Machine</option>
-    <option value="Overlock Machine">Overlock Machine</option>
-    <option value="Steam Iron">Steam Iron</option>
-    <option value="Cutting Table">Cutting Table</option>
-    <option value="Fabric Scissors">Fabric Scissors</option>
-    <option value="Dress Form">Dress Form</option>
-  </select>
+  <form id="maintenanceForm">
+    <label>Equipment:</label>
+    <select id="equipment" required>
+      <option value="">-- Select Equipment --</option>
+      <option value="Sewing Machine">Sewing Machine</option>
+      <option value="Overlock Machine">Overlock Machine</option>
+      <option value="Steam Iron">Steam Iron</option>
+      <option value="Cutting Table">Cutting Table</option>
+      <option value="Fabric Scissors">Fabric Scissors</option>
+      <option value="Dress Form">Dress Form</option>
+    </select>
 
-  <label>Serial/ID:</label>
-  <input list="serials" id="serial" required />
-  <datalist id="serials">
-    <option value="SM-001"></option>
-    <option value="OL-001"></option>
-    <option value="IR-001"></option>
-    <option value="CT-001"></option>
-    <option value="SC-001"></option>
-    <option value="DF-001"></option>
-  </datalist>
+    <label>Serial/ID:</label>
+    <input list="serials" id="serial" required />
+    <datalist id="serials">
+      <option value="SM-001"></option>
+      <option value="OL-001"></option>
+      <option value="IR-001"></option>
+      <option value="CT-001"></option>
+      <option value="SC-001"></option>
+      <option value="DF-001"></option>
+    </datalist>
 
-  <label>Last Maintenance Date:</label>
-  <input type="date" id="lastDate" required />
+    <label>Last Maintenance Date:</label>
+    <input type="date" id="lastDate" required />
 
-  <label>Issue Reported:</label>
-  <input type="text" id="issue" />
+    <label>Issue Reported:</label>
+    <input type="text" id="issue" />
 
-  <label>Repair/Maintenance Done:</label>
-  <input type="text" id="repair" />
+    <label>Repair/Maintenance Done:</label>
+    <input type="text" id="repair" />
 
-  <label>Next Due Date:</label>
-  <input type="date" id="nextDate" />
+    <label>Next Due Date:</label>
+    <input type="date" id="nextDate" />
 
-  <label>Technician/Handled By:</label>
-  <input type="text" id="technician" />
+    <label>Technician/Handled By:</label>
+    <input type="text" id="technician" />
 
-  <label>Notes:</label>
-  <textarea id="notes"></textarea>
+    <label>Notes:</label>
+    <textarea id="notes"></textarea>
 
-  <button class="btn btn-contained btn-contained-l" type="submit">Add Record</button>
-</form>
+    <button class="btn btn-contained btn-contained-l" type="submit">
+      Add Record
+    </button>
+  </form>
 
-<button class="btn btn-contained btn-contained-l" id="downloadJson">Download JSON</button>
-<button class="btn btn-contained btn-contained-l" id="downloadCsv">Download CSV</button>
+  <button class="btn btn-contained btn-contained-l" id="downloadJson">
+    Download JSON
+  </button>
+  <button class="btn btn-contained btn-contained-l" id="downloadCsv">
+    Download CSV
+  </button>
 
-<table>
-  <thead>
-    <tr>
-      <th>Equipment</th>
-      <th>Serial/ID</th>
-      <th>Last Maintenance Date</th>
-      <th>Issue Reported</th>
-      <th>Repair/Maintenance Done</th>
-      <th>Next Due Date</th>
-      <th>Technician</th>
-      <th>Notes</th>
-    </tr>
-  </thead>
-  <tbody id="recordsTable">
-    <!-- Records will appear here -->
-  </tbody>
-</table>
+  <div class="table-responsive">
+    <table>
+      <thead>
+        <tr>
+          <th>Equipment</th>
+          <th>Serial/ID</th>
+          <th>Last Maintenance Date</th>
+          <th>Issue Reported</th>
+          <th>Repair/Maintenance Done</th>
+          <th>Next Due Date</th>
+          <th>Technician</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody id="recordsTable">
+        <!-- Records will appear here -->
+      </tbody>
+    </table>
+  </div>
+</div>

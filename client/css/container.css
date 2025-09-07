@@ -1,0 +1,5 @@
+.container-md {
+  width: 100%;
+  max-width: var(--breakpoint-max-width-md);
+}
+

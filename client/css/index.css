@@ -1,5 +1,8 @@
 /* Modules */
 @import "./button.css";
+@import "./container.css";
+@import "./table.css";
+
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -88,4 +91,14 @@ td {
 th {
   background: #007bff;
   color: white;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
