@@ -1,0 +1,22 @@
+.text-gray {
+  color: var(--color-gray);
+}
+.text-xs {
+  font-size: 0.75rem
+}
+
+.text-sm {
+  font-size: 1rem
+}
+
+.text-semibold {
+  font-weight: 500;
+}
+
+.text-regular {
+  font-weight: normal;
+}
+
+.text-center {
+  text-align: center;
+}

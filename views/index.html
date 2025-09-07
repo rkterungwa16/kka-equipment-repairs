@@ -1,46 +1,62 @@
 <div class="container-md">
-  <h2>Tailoring Shop Equipment Maintenance Tracker</h2>
+  <h2 class="text-gray text-center">Tailoring Shop Equipment Maintenance Tracker</h2>
 
-  <form id="maintenanceForm">
-    <label>Equipment:</label>
-    <select class="input" id="equipment" required>
-      <option value="">-- Select Equipment --</option>
-      <option value="Sewing Machine">Sewing Machine</option>
-      <option value="Overlock Machine">Overlock Machine</option>
-      <option value="Steam Iron">Steam Iron</option>
-      <option value="Cutting Table">Cutting Table</option>
-      <option value="Fabric Scissors">Fabric Scissors</option>
-      <option value="Dress Form">Dress Form</option>
-    </select>
+  <form class="flex flex-column gap-l" id="maintenanceForm">
+    <fieldset>
+      <label class="text-gray text-xs">Equipment:</label>
+      <select class="input" id="equipment" required>
+        <option value="">-- Select Equipment --</option>
+        <option value="Sewing Machine">Sewing Machine</option>
+        <option value="Overlock Machine">Overlock Machine</option>
+        <option value="Steam Iron">Steam Iron</option>
+        <option value="Cutting Table">Cutting Table</option>
+        <option value="Fabric Scissors">Fabric Scissors</option>
+        <option value="Dress Form">Dress Form</option>
+      </select>
+    </fieldset>
 
-    <label>Serial/ID:</label>
-    <input class="input" list="serials" id="serial" required />
-    <datalist id="serials">
-      <option value="SM-001"></option>
-      <option value="OL-001"></option>
-      <option value="IR-001"></option>
-      <option value="CT-001"></option>
-      <option value="SC-001"></option>
-      <option value="DF-001"></option>
-    </datalist>
+    <fieldset>
+      <label class="text-gray text-xs">Serial/ID:</label>
+      <input class="input" list="serials" id="serial" required />
+      <datalist id="serials">
+        <option value="SM-001"></option>
+        <option value="OL-001"></option>
+        <option value="IR-001"></option>
+        <option value="CT-001"></option>
+        <option value="SC-001"></option>
+        <option value="DF-001"></option>
+      </datalist>
+    </fieldset>
 
-    <label>Last Maintenance Date:</label>
-    <input class="input" type="date" id="lastDate" required />
+    <fieldset>
+      <label class="text-gray text-xs text-semibold">Last Maintenance Date:</label>
+      <input class="input" type="date" id="lastDate" required />
+    </fieldset>
 
-    <label>Issue Reported:</label>
-    <input class="input" type="text" id="issue" />
+    <fieldset>
+      <label class="text-gray text-xs">Issue Reported:</label>
+      <input class="input" type="text" id="issue" />
+    </fieldset>
 
-    <label>Repair/Maintenance Done:</label>
-    <input class="input" type="text" id="repair" />
+    <fieldset>
+      <label class="text-gray text-xs">Repair/Maintenance Done:</label>
+      <input class="input" type="text" id="repair" />
+    </fieldset>
 
-    <label>Next Due Date:</label>
-    <input class="input" type="date" id="nextDate" />
+    <fieldset>
+      <label  class="text-gray text-xs">Next Due Date:</label>
+      <input class="input" type="date" id="nextDate" />
+    </fieldset>
 
-    <label>Technician/Handled By:</label>
-    <input class="input" type="text" id="technician" />
+    <fieldset>
+      <label class="text-gray text-xs">Technician/Handled By:</label>
+      <input class="input" type="text" id="technician" />
+    </fieldset>
 
-    <label>Notes:</label>
-    <textarea class="input" id="notes"></textarea>
+    <fieldset>
+      <label class="text-gray text-xs">Notes:</label>
+      <textarea class="input" id="notes"></textarea>
+    </fieldset>
 
     <button class="btn btn-contained btn-contained-l" type="submit">
       Add Record
