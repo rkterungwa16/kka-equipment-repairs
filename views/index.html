@@ -3,7 +3,7 @@
 
   <form id="maintenanceForm">
     <label>Equipment:</label>
-    <select id="equipment" required>
+    <select class="input" id="equipment" required>
       <option value="">-- Select Equipment --</option>
       <option value="Sewing Machine">Sewing Machine</option>
       <option value="Overlock Machine">Overlock Machine</option>
@@ -14,7 +14,7 @@
     </select>
 
     <label>Serial/ID:</label>
-    <input list="serials" id="serial" required />
+    <input class="input" list="serials" id="serial" required />
     <datalist id="serials">
       <option value="SM-001"></option>
       <option value="OL-001"></option>
@@ -25,22 +25,22 @@
     </datalist>
 
     <label>Last Maintenance Date:</label>
-    <input type="date" id="lastDate" required />
+    <input class="input" type="date" id="lastDate" required />
 
     <label>Issue Reported:</label>
-    <input type="text" id="issue" />
+    <input class="input" type="text" id="issue" />
 
     <label>Repair/Maintenance Done:</label>
-    <input type="text" id="repair" />
+    <input class="input" type="text" id="repair" />
 
     <label>Next Due Date:</label>
-    <input type="date" id="nextDate" />
+    <input class="input" type="date" id="nextDate" />
 
     <label>Technician/Handled By:</label>
-    <input type="text" id="technician" />
+    <input class="input" type="text" id="technician" />
 
     <label>Notes:</label>
-    <textarea id="notes"></textarea>
+    <textarea class="input" id="notes"></textarea>
 
     <button class="btn btn-contained btn-contained-l" type="submit">
       Add Record

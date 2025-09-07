@@ -2,7 +2,7 @@
 @import "./button.css";
 @import "./container.css";
 @import "./table.css";
-
+@import "./input.css";
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
