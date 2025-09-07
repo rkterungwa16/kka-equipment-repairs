@@ -1,3 +1,13 @@
 .table-responsive {
   overflow-x: auto;
+  margin-top: 1.5rem;
+}
+
+.table {
+  width: 100%;
+  color: #212529;
+  vertical-align: top;
+  border-color: #dee2e6;
+  caption-side: bottom;
+  border-collapse: collapse;
 }

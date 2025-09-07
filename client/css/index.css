@@ -65,7 +65,6 @@ table {
   padding: 15px;
   border-radius: 8px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 input,
 select,
@@ -85,23 +84,33 @@ fieldset {
 
 table {
   width: 100%;
+  color: #212529;
+  vertical-align: top;
+  border-color: #dee2e6;
+  caption-side: bottom;
   border-collapse: collapse;
+  font-size: 0.75rem;
 }
 th,
 td {
-  border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
 }
 th {
-  background: #007bff;
-  color: white;
+  /* color: white; */
+  border-color: #e6e8eb;
+  border-bottom: 1px solid #e6e8eb;
+  color: #6a7c8f;
+}
+
+thead {
+  border-bottom: 2px solid var(--color-black);
+  background: var(--color-gray-6);
 }
 
 .wrapper {
   width: 100%;
 }
-
 
 .content {
   width: 100%;
