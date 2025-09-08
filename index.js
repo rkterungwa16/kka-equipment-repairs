@@ -22,4 +22,4 @@ const server = http.createServer(process).listen(3300, function () {
   );
 });
 
-export default server;
+module.exports = server;
