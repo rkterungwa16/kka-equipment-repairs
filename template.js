@@ -4,10 +4,10 @@ const { asyncReadFile } = require("./utils");
 
 const config = {
   templateGlobals: {
-    appName: "UptimeChecker",
-    companyName: "NotARealCompany, Inc.",
-    yearCreated: "2018",
-    baseUrl: "http://localhost:5000/",
+    appName: "Equipment Repairs Tracker",
+    companyName: "KarenKombol Ateliers, Inc.",
+    yearCreated: "2025",
+    baseUrl: "http://localhost:3300/",
   },
 };
 
@@ -16,16 +16,16 @@ const interpolate = (str, data) => {
   data = typeof data == "object" && data !== null ? data : {};
 
   // Add the templateGlobals to the data object, prepending their key name with "global."
-  for (var keyName in config.templateGlobals) {
+  for (let keyName in config.templateGlobals) {
     if (config.templateGlobals.hasOwnProperty(keyName)) {
       data["global." + keyName] = config.templateGlobals[keyName];
     }
   }
   // For each key in the data object, insert its value into the string at the corresponding placeholder
-  for (var key in data) {
+  for (let key in data) {
     if (data.hasOwnProperty(key) && typeof (data[key] == "string")) {
-      var replace = data[key];
-      var find = "{" + key + "}";
+      let replace = data[key];
+      let find = "{" + key + "}";
       str = str.replace(find, replace);
     }
   }
@@ -40,12 +40,13 @@ const getTemplate = async (templateName, data) => {
       : false;
   data = typeof data == "object" && data !== null ? data : {};
   if (templateName) {
-    var templatesDir = path.join(__dirname, "./views/");
+    let templatesDir = path.join(__dirname, "./views/");
 
     try {
-      const finalString = await asyncReadFile(
+      let finalString = await asyncReadFile(
         templatesDir + templateName + ".html"
       );
+      finalString = interpolate(finalString, data);
       return finalString;
     } catch (e) {
       throw new Error("No template could be found");

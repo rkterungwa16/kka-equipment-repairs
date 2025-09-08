@@ -1,0 +1,179 @@
+.p-1 {
+  padding: var(--spacing-1);
+}
+
+.p-2 {
+  padding: var(--spacing-2);
+}
+
+.p-3 {
+  padding: var(--spacing-3);
+}
+
+.p-4 {
+  padding: var(--spacing-4);
+}
+
+.p-5 {
+  padding: var(--spacing-5);
+}
+
+.p-6 {
+  padding: var(--spacing-6);
+}
+
+@media only screen and (min-width: var(--breakpoint-xs)) {
+  .p-1-xs {
+    padding: var(--spacing-1);
+  }
+
+  .p-2-xs {
+    padding: var(--spacing-2);
+  }
+
+  .p-3-xs {
+    padding: var(--spacing-3);
+  }
+
+  .p-4-xs {
+    padding: var(--spacing-4);
+  }
+
+  .p-5-xs {
+    padding: var(--spacing-5);
+  }
+
+  .p-6-xs {
+    padding: var(--spacing-6);
+  }
+}
+
+@media only screen and (min-width: var(--breakpoint-sm)) {
+  .p-1-sm {
+    padding: var(--spacing-1);
+  }
+
+  .p-2-sm {
+    padding: var(--spacing-2);
+  }
+
+  .p-3-sm {
+    padding: var(--spacing-3);
+  }
+
+  .p-4-sm {
+    padding: var(--spacing-4);
+  }
+
+  .p-5-sm {
+    padding: var(--spacing-5);
+  }
+
+  .p-6-sm {
+    padding: var(--spacing-6);
+  }
+}
+
+@media only screen and (min-width: var(--breakpoint-md)) {
+  .p-1-md {
+    padding: var(--spacing-1);
+  }
+
+  .p-2-md {
+    padding: var(--spacing-2);
+  }
+
+  .p-3-md {
+    padding: var(--spacing-3);
+  }
+
+  .p-4-md {
+    padding: var(--spacing-4);
+  }
+
+  .p-5-md {
+    padding: var(--spacing-5);
+  }
+
+  .p-6-md {
+    padding: var(--spacing-6);
+  }
+}
+
+@media screen and (min-width: var(--breakpoint-l)) {
+  .p-1-l {
+    padding: var(--spacing-1);
+  }
+
+  .p-2-l {
+    padding: var(--spacing-2);
+  }
+
+  .p-3-l {
+    padding: var(--spacing-3);
+  }
+
+  .p-4-l {
+    padding: var(--spacing-4);
+  }
+
+  .p-5-l {
+    padding: var(--spacing-5);
+  }
+
+  .p-6-l {
+    padding: var(--spacing-6);
+  }
+}
+
+@media only screen and (min-width: var(--breakpoint-xl)) {
+  .p-1-xl {
+    padding: var(--spacing-1);
+  }
+
+  .p-2-xl {
+    padding: var(--spacing-2);
+  }
+
+  .p-3-xl {
+    padding: var(--spacing-3);
+  }
+
+  .p-4-xl {
+    padding: var(--spacing-4);
+  }
+
+  .p-5-xl {
+    padding: var(--spacing-5);
+  }
+
+  .p-6-xl {
+    padding: var(--spacing-6);
+  }
+}
+
+@media only screen and (min-width: var(--breakpoint-2xl)) {
+  .p-1-2xl {
+    padding: var(--spacing-1);
+  }
+
+  .p-2-2xl {
+    padding: var(--spacing-2);
+  }
+
+  .p-3-2xl {
+    padding: var(--spacing-3);
+  }
+
+  .p-4-2xl {
+    padding: var(--spacing-4);
+  }
+
+  .p-5-2xl {
+    padding: var(--spacing-5);
+  }
+
+  .p-6-2xl {
+    padding: var(--spacing-6);
+  }
+}

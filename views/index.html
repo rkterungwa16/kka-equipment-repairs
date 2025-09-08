@@ -1,7 +1,9 @@
 <div class="container-md">
-  <h2 class="text-gray text-center">Tailoring Shop Equipment Maintenance Tracker</h2>
+  <h2 class="text-gray text-center">
+    Tailoring Shop Equipment Maintenance Tracker
+  </h2>
 
-  <form class="flex flex-column gap-l" id="maintenanceForm">
+  <form class="flex flex-column gap-l p-4-l" id="maintenanceForm">
     <fieldset>
       <label class="text-gray text-xs">Equipment:</label>
       <select class="input" id="equipment" required>
@@ -29,7 +31,9 @@
     </fieldset>
 
     <fieldset>
-      <label class="text-gray text-xs text-semibold">Last Maintenance Date:</label>
+      <label class="text-gray text-xs text-semibold"
+        >Last Maintenance Date:</label
+      >
       <input class="input" type="date" id="lastDate" required />
     </fieldset>
 
@@ -44,7 +48,7 @@
     </fieldset>
 
     <fieldset>
-      <label  class="text-gray text-xs">Next Due Date:</label>
+      <label class="text-gray text-xs">Next Due Date:</label>
       <input class="input" type="date" id="nextDate" />
     </fieldset>
 
@@ -63,12 +67,14 @@
     </button>
   </form>
 
-  <button class="btn btn-contained btn-contained-l" id="downloadJson">
-    Download JSON
-  </button>
-  <button class="btn btn-contained btn-contained-l" id="downloadCsv">
-    Download CSV
-  </button>
+  <div class="flex flex-column gap-l p-4-l">
+    <button class="btn btn-contained btn-contained-l" id="downloadJson">
+      Download JSON
+    </button>
+    <button class="btn btn-contained btn-contained-l" id="downloadCsv">
+      Download CSV
+    </button>
+  </div>
 
   <div class="table-responsive">
     <table>
