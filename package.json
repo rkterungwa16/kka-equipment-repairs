@@ -15,6 +15,9 @@
     "equipment",
     "parts"
   ],
+  "engines": {
+    "node": "22.x"
+  },
   "author": "Terungwa Kombol",
   "license": "ISC",
   "bugs": {
