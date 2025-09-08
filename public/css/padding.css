@@ -1,26 +1,4 @@
-.p-1 {
-  padding: var(--spacing-1);
-}
-
-.p-2 {
-  padding: var(--spacing-2);
-}
-
-.p-3 {
-  padding: var(--spacing-3);
-}
-
-.p-4 {
-  padding: var(--spacing-4);
-}
-
-.p-5 {
-  padding: var(--spacing-5);
-}
-
-.p-6 {
-  padding: var(--spacing-6);
-}
+/* Note: For media queries, always consider order of placement. All media queries come before the normal css */
 
 @media only screen and (min-width: var(--breakpoint-xs)) {
   .p-1-xs {
@@ -100,8 +78,7 @@
   }
 }
 
-/* @media screen and (max-width: 768px) */
-@media screen and (min-width: var(--breakpoint-l)) {
+@media only screen and (min-width: 1024px) {
   .p-1-l {
     padding: var(--spacing-1);
   }
@@ -177,4 +154,28 @@
   .p-6-2xl {
     padding: var(--spacing-6);
   }
+}
+
+.p-1 {
+  padding: var(--spacing-1);
+}
+
+.p-2 {
+  padding: var(--spacing-2);
+}
+
+.p-3 {
+  padding: var(--spacing-3);
+}
+
+.p-4 {
+  padding: var(--spacing-4);
+}
+
+.p-5 {
+  padding: var(--spacing-5);
+}
+
+.p-6 {
+  padding: var(--spacing-6);
 }

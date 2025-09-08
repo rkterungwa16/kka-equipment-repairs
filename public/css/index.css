@@ -1,10 +1,11 @@
 /* Modules */
-@import "./button.css";
-@import "./container.css";
-@import "./table.css";
-@import "./input.css";
-@import "./typography.css";
-@import "./padding.css";
+@import "button.css";
+@import "container.css";
+@import "table.css";
+@import "input.css";
+@import "typography.css";
+@import "flex.css";
+@import "padding.css";
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
