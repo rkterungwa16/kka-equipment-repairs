@@ -5,9 +5,9 @@ const DefaultTemplate = (req, res) => {
     case "GET":
       // Prepare data for interpolation
       const templateData = {
-        "head.title": "Uptime Monitoring - Made Simple",
+        "head.title": "KKA equipment maintainance tracker",
         "head.description":
-          "We offer free, simple uptime monitoring for HTTP/HTTPS sites all kinds. When your site goes down, we'll send you a text to let you know",
+          "Track your equipmenent maintainance",
         "body.class": "index",
       };
 
