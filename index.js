@@ -21,3 +21,5 @@ const server = http.createServer(process).listen(3300, function () {
     "The HTTP server is running on port " + 3300
   );
 });
+
+export default server;
