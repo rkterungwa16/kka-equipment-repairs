@@ -2,12 +2,13 @@ const path = require("path");
 
 const { asyncReadFile } = require("./utils");
 
+const port = process.env.PORT || 3300;
 const config = {
   templateGlobals: {
     appName: "Equipment Repairs Tracker",
     companyName: "KarenKombol Ateliers, Inc.",
     yearCreated: "2025",
-    baseUrl: "http://localhost:3300/",
+    baseUrl: `http://localhost:${port}/`,
   },
 };
 
