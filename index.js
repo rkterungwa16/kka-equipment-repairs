@@ -1,11 +1,11 @@
 const http = require("http");
 const { Routers } = require("./router");
 const { HomePage } = require("./route-handlers/pages/home.page.js");
-const { HomeAssets } = require("./route-handlers/home.assets.js");
+const { Assets } = require("./route-handlers/assets.js");
 
 const port = process.env.PORT || 3300;
 
-Routers.register("public", HomeAssets).register('/', HomePage);
+Routers.register("public", Assets).register('/', HomePage);
 
 /**
  * Handles incoming HTTP requests and sends a response.

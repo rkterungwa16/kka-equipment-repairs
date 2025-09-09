@@ -2,7 +2,7 @@ const path = require("path");
 
 const { asyncReadFile } = require("../utils");
 
-const HomeAssets = async (req, res) => {
+const Assets = async (req, res) => {
   const sendError = function (message, code) {
     // res.writeHead(code || 404, {'Content-Type': 'text/html'});
     res.end(message);
@@ -53,5 +53,5 @@ const HomeAssets = async (req, res) => {
 };
 
 module.exports = {
-  HomeAssets,
+  Assets,
 };
