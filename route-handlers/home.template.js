@@ -1,6 +1,6 @@
 const { addUniversalTemplates, getTemplate } = require("../template");
 
-const HomeTemplate = async (req, res) => {
+const HomePage = async (req, res) => {
   switch (req.method) {
     case "GET":
       // Prepare data for interpolation
@@ -28,5 +28,5 @@ const HomeTemplate = async (req, res) => {
 };
 
 module.exports = {
-  HomeTemplate,
+  HomePage,
 };
