@@ -1,4 +1,4 @@
-const { addUniversalTemplates, getTemplate } = require("../template");
+const { addUniversalTemplates, getTemplate } = require("../../template");
 
 const HomePage = async (req, res) => {
   switch (req.method) {

@@ -1,6 +1,6 @@
 const http = require("http");
 const { Routers } = require("./router");
-const { HomePage } = require("./route-handlers/home.template.js");
+const { HomePage } = require("./route-handlers/pages/home.page.js");
 const { HomeAssets } = require("./route-handlers/home.assets.js");
 
 const port = process.env.PORT || 3300;
