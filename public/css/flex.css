@@ -17,6 +17,18 @@
   flex-direction: row;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
 .gap-1 {
   gap: var(--spacing-1);
 }

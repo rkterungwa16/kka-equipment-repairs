@@ -6,6 +6,9 @@
 @import "typography.css";
 @import "flex.css";
 @import "padding.css";
+@import "width.css";
+@import "overflow.css";
+@import "margin.css";
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -26,7 +29,7 @@
 
   --breakpoint-max-width-sm: 540px;
   --breakpoint-max-width-md: 720px;
-  --breakpoint-max-width-lg: 960px;
+  --breakpoint-max-width-l: 960px;
   --breakpoint-max-width-xl: 1140px;
   --breakpoint-max-width-2xl: 1320px;
 
@@ -55,8 +58,12 @@
 }
 
 body {
-  margin: 20px;
   background: #f9f9f9;
+  margin: 0;
+  display: flex;
+  /* place-items: center; */
+  min-width: 320px;
+  min-height: 100vh;
 }
 h2 {
   color: #333;

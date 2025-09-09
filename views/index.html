@@ -1,98 +1,108 @@
-<div class="container-md">
-  <h2 class="text-gray text-center">
-    Tailoring Shop Equipment Maintenance Tracker
-  </h2>
+<div
+  class="container-max-w-l w-100 flex flex-column justify-center items-center overflow-x-hidden"
+>
+  <div class="container-max-w-sm w-100 flex flex-column items-center gap-3">
+    <h2 class="text-gray text-center">
+      Tailoring Shop Equipment Maintenance Tracker
+    </h2>
+    <form class="flex flex-column gap-3 p-4-l w-100" id="maintenanceForm">
+      <fieldset>
+        <label class="text-gray text-xs">Equipment:</label>
+        <select class="input" id="equipment" required>
+          <option value="">-- Select Equipment --</option>
+          <option value="Sewing Machine">Sewing Machine</option>
+          <option value="Overlock Machine">Overlock Machine</option>
+          <option value="Steam Iron">Steam Iron</option>
+          <option value="Cutting Table">Cutting Table</option>
+          <option value="Fabric Scissors">Fabric Scissors</option>
+          <option value="Dress Form">Dress Form</option>
+        </select>
+      </fieldset>
 
-  <form class="flex flex-column gap-3 p-4-l" id="maintenanceForm">
-    <fieldset>
-      <label class="text-gray text-xs">Equipment:</label>
-      <select class="input" id="equipment" required>
-        <option value="">-- Select Equipment --</option>
-        <option value="Sewing Machine">Sewing Machine</option>
-        <option value="Overlock Machine">Overlock Machine</option>
-        <option value="Steam Iron">Steam Iron</option>
-        <option value="Cutting Table">Cutting Table</option>
-        <option value="Fabric Scissors">Fabric Scissors</option>
-        <option value="Dress Form">Dress Form</option>
-      </select>
-    </fieldset>
+      <fieldset>
+        <label class="text-gray text-xs">Serial/ID:</label>
+        <input class="input" list="serials" id="serial" required />
+        <datalist id="serials">
+          <option value="SM-001"></option>
+          <option value="OL-001"></option>
+          <option value="IR-001"></option>
+          <option value="CT-001"></option>
+          <option value="SC-001"></option>
+          <option value="DF-001"></option>
+        </datalist>
+      </fieldset>
 
-    <fieldset>
-      <label class="text-gray text-xs">Serial/ID:</label>
-      <input class="input" list="serials" id="serial" required />
-      <datalist id="serials">
-        <option value="SM-001"></option>
-        <option value="OL-001"></option>
-        <option value="IR-001"></option>
-        <option value="CT-001"></option>
-        <option value="SC-001"></option>
-        <option value="DF-001"></option>
-      </datalist>
-    </fieldset>
+      <fieldset>
+        <label class="text-gray text-xs text-semibold"
+          >Last Maintenance Date:</label
+        >
+        <input class="input" type="date" id="lastDate" required />
+      </fieldset>
 
-    <fieldset>
-      <label class="text-gray text-xs text-semibold"
-        >Last Maintenance Date:</label
-      >
-      <input class="input" type="date" id="lastDate" required />
-    </fieldset>
+      <fieldset>
+        <label class="text-gray text-xs">Issue Reported:</label>
+        <input class="input" type="text" id="issue" />
+      </fieldset>
 
-    <fieldset>
-      <label class="text-gray text-xs">Issue Reported:</label>
-      <input class="input" type="text" id="issue" />
-    </fieldset>
+      <fieldset>
+        <label class="text-gray text-xs">Repair/Maintenance Done:</label>
+        <input class="input" type="text" id="repair" />
+      </fieldset>
 
-    <fieldset>
-      <label class="text-gray text-xs">Repair/Maintenance Done:</label>
-      <input class="input" type="text" id="repair" />
-    </fieldset>
+      <fieldset>
+        <label class="text-gray text-xs">Next Due Date:</label>
+        <input class="input" type="date" id="nextDate" />
+      </fieldset>
 
-    <fieldset>
-      <label class="text-gray text-xs">Next Due Date:</label>
-      <input class="input" type="date" id="nextDate" />
-    </fieldset>
+      <fieldset>
+        <label class="text-gray text-xs">Technician/Handled By:</label>
+        <input class="input" type="text" id="technician" />
+      </fieldset>
 
-    <fieldset>
-      <label class="text-gray text-xs">Technician/Handled By:</label>
-      <input class="input" type="text" id="technician" />
-    </fieldset>
+      <fieldset>
+        <label class="text-gray text-xs">Notes:</label>
+        <textarea class="input" id="notes"></textarea>
+      </fieldset>
 
-    <fieldset>
-      <label class="text-gray text-xs">Notes:</label>
-      <textarea class="input" id="notes"></textarea>
-    </fieldset>
+      <div class="p-3">
+        <button class="btn btn-contained btn-contained-l" type="submit">
+          Add Record
+        </button>
+      </div>
+    </form>
 
-    <button class="btn btn-contained btn-contained-l" type="submit">
-      Add Record
-    </button>
-  </form>
-
-  <div class="flex flex-column gap-l p-4-l">
-    <button class="btn btn-contained btn-contained-l" id="downloadJson">
-      Download JSON
-    </button>
-    <button class="btn btn-contained btn-contained-l" id="downloadCsv">
-      Download CSV
-    </button>
+    <div class="flex justify-center w-100">
+      <div class="p-2 w-100">
+        <button class="btn btn-contained btn-contained-l" id="downloadJson">
+          Download JSON
+        </button>
+      </div>
+      <div class="p-2 w-100">
+        <button class="btn btn-contained btn-contained-l" id="downloadCsv">
+          Download CSV
+        </button>
+      </div>
+    </div>
   </div>
-
-  <div class="table-responsive">
-    <table>
-      <thead>
-        <tr>
-          <th>Equipment</th>
-          <th>Serial/ID</th>
-          <th>Last Maintenance Date</th>
-          <th>Issue Reported</th>
-          <th>Repair/Maintenance Done</th>
-          <th>Next Due Date</th>
-          <th>Technician</th>
-          <th>Notes</th>
-        </tr>
-      </thead>
-      <tbody id="recordsTable">
-        <!-- Records will appear here -->
-      </tbody>
-    </table>
+  <div class="w-100">
+    <div class="table-responsive">
+      <table>
+        <thead>
+          <tr>
+            <th>Equipment</th>
+            <th>Serial/ID</th>
+            <th>Last Maintenance Date</th>
+            <th>Issue Reported</th>
+            <th>Repair/Maintenance Done</th>
+            <th>Next Due Date</th>
+            <th>Technician</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody id="recordsTable">
+          <!-- Records will appear here -->
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>

@@ -1,5 +1,79 @@
-.container-md {
-  width: 100%;
+@media only screen and (min-width: var(--breakpoint-xs)) {
+  .container-xs {
+    max-width: var(--breakpoint-max-width-xs);
+  }
+}
+
+@media only screen and (min-width: var(--breakpoint-sm)) {
+  .container-sm {
+    max-width: var(--breakpoint-max-width-sm);
+  }
+}
+
+@media only screen and (min-width: var(--breakpoint-md)) {
+  .container-md {
+    max-width: var(--breakpoint-max-width-md);
+  }
+}
+
+@media only screen and (min-width: var(--breakpoint-l)) {
+  .container-l {
+    max-width: var(--breakpoint-max-width-l);
+  }
+}
+
+@media only screen and (min-width: var(--breakpoint-xl)) {
+  .container-xl {
+    max-width: var(--breakpoint-max-width-xl);
+  }
+}
+
+@media only screen and (min-width: var(--breakpoint-2xl)) {
+  .container-2xl {
+    max-width: var(--breakpoint-max-width-2xl);
+  }
+}
+
+.container-max-w-xs {
+  max-width: var(--breakpoint-max-width-xs);
+}
+
+.container-max-w-sm {
+  max-width: var(--breakpoint-max-width-sm);
+}
+
+.container-max-w-md {
   max-width: var(--breakpoint-max-width-md);
 }
 
+.container-max-w-l {
+  max-width: var(--breakpoint-max-width-l);
+}
+
+.container-max-w-2xl {
+  max-width: var(--breakpoint-max-width-2xl);
+}
+
+/* .container-xs {
+  max-width: 100%;
+} */
+
+/* .container-sm {
+  max-width: 100%;
+} */
+
+/* .container-md {
+  max-width: 100%;
+}
+
+.container-l {
+  max-width: 100%;
+}
+
+.container-xl {
+  max-width: 100%;
+}
+
+.container-2xl {
+  max-width: 100%;
+} */
