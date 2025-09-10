@@ -2,6 +2,8 @@ class FormView {
   constructor(models, controllers) {
     let self = this;
     const form = document.getElementById("maintenanceForm");
+    const downloadBtn = document.getElementById("downloadJson");
+    const downloadCsvBtn = document.getElementById("downloadCsv");
     this.renderTable = this.renderTable.bind(this);
     self.controllers = controllers;
     self.models = models;
@@ -21,6 +23,24 @@ class FormView {
       console.log("THIS___", this);
       self.renderTable();
       form.reset();
+    });
+
+    // Download JSON file
+    downloadBtn.addEventListener("click", function () {
+      const reportsModel = self.models.find(
+        (_model) => _model.name === "reports"
+      );
+      const blob = new Blob([JSON.stringify(reportsModel.reports, null, 2)], {
+        type: "application/json",
+      });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "maintenance_records.json";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
     });
   }
 
@@ -47,8 +67,7 @@ class FormView {
     });
   }
 
-  clear() {
-  }
+  clear() {}
 
   save() {
     const equipment = document.getElementById("equipment").value;
@@ -78,7 +97,7 @@ class FormView {
     );
     localStorage.setItem(
       "maintenanceRecords",
-      JSON.stringify(reportsModel.equipments)
+      JSON.stringify(reportsModel.reports)
     );
   }
 }
