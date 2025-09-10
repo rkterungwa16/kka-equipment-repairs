@@ -48,6 +48,7 @@ const Assets = async (req, res) => {
       content: data,
     });
   } catch (e) {
+    console.log('ERROR___', e);
     throw new Error("Could not find file");
   }
 };
