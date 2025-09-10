@@ -30,13 +30,41 @@ class FormView {
       const reportsModel = self.models.find(
         (_model) => _model.name === "reports"
       );
-      const blob = new Blob([JSON.stringify(reportsModel.reports, null, 2)], {
+      const reports = reportsModel.reports;
+      const blob = new Blob([JSON.stringify(reports, null, 2)], {
         type: "application/json",
       });
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
       a.download = "maintenance_records.json";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    });
+
+    // Download CSV file
+    downloadCsvBtn.addEventListener("click", function () {
+      const reportsModel = self.models.find(
+        (_model) => _model.name === "reports"
+      );
+      const reports = reportsModel.reports;
+      if (reports.length === 0) return;
+
+      const headers = Object.keys(reports[0]).join(",");
+      const rows = reports.map((record) => {
+        return Object.values(record)
+          .map((value) => `"${value}"`)
+          .join(",");
+      });
+      const csvContent = [headers, ...rows].join("\n");
+
+      const blob = new Blob([csvContent], { type: "text/csv" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "maintenance_records.csv";
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
@@ -55,7 +83,6 @@ class FormView {
       const row = document.createElement("tr");
       row.innerHTML = `
         <td>${record.equipment}</td>
-        <td>${record.serial}</td>
         <td>${record.lastMaintenanceDate}</td>
         <td>${record.issueReported}</td>
         <td>${record.repairDone}</td>
