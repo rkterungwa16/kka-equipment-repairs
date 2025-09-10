@@ -3,51 +3,6 @@ const tableBody = document.getElementById("recordsTable");
 const downloadBtn = document.getElementById("downloadJson");
 const downloadCsvBtn = document.getElementById("downloadCsv");
 
-// Store records in an array
-// let records = JSON.parse(localStorage.getItem("maintenanceRecords")) || [];
-
-// Function to render table
-// function renderTable() {
-//   tableBody.innerHTML = "";
-//   records.forEach((record) => {
-//     const row = document.createElement("tr");
-//     row.innerHTML = `
-//         <td>${record.equipment}</td>
-//         <td>${record.serial}</td>
-//         <td>${record.lastMaintenanceDate}</td>
-//         <td>${record.issueReported}</td>
-//         <td>${record.repairDone}</td>
-//         <td>${record.nextDueDate}</td>
-//         <td>${record.technician}</td>
-//         <td>${record.notes}</td>
-//       `;
-//     tableBody.appendChild(row);
-//   });
-// }
-
-// Initial render
-// renderTable();
-
-// Handle form submit
-// form.addEventListener("submit", function (e) {
-//   e.preventDefault();
-
-//   const record = {
-//     equipment: document.getElementById("equipment").value,
-//     lastMaintenanceDate: document.getElementById("lastDate").value,
-//     issueReported: document.getElementById("issue").value,
-//     repairDone: document.getElementById("repair").value,
-//     nextDueDate: document.getElementById("nextDate").value,
-//     technician: document.getElementById("technician").value,
-//     notes: document.getElementById("notes").value,
-//   };
-
-//   records.push(record);
-//   localStorage.setItem("maintenanceRecords", JSON.stringify(records));
-
-//   renderTable();
-//   form.reset();
-// });
 
 // Download JSON file
 // downloadBtn.addEventListener("click", function () {
