@@ -33,6 +33,8 @@ const Assets = async (req, res) => {
         break;
       case "png":
         contentType = "image/png";
+      case "svg":
+        contentType = "image/svg";
         break;
       default:
         contentType = "text/plain";
@@ -42,13 +44,15 @@ const Assets = async (req, res) => {
   };
   try {
     const urlPath = path.join(__dirname, `/../${req.url}`);
+    console.log('REQ.URL', req.url);
+    console.log('URL__PATH__', urlPath)
     const data = await asyncReadFile(urlPath);
     serve({
       ext: urlPath.split(".").pop(),
       content: data,
     });
   } catch (e) {
-    console.log('ERROR___', e);
+    console.log("ERROR___", e);
     throw new Error("Could not find file");
   }
 };
