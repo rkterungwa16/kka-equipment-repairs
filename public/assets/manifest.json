@@ -4,7 +4,7 @@
   "name": "KKA Equipment repairs",
   "display": "standalone",
   "start_url": "/",
-  "short_name": "starter",
+  "short_name": "KKA-EQUi tracker",
   "theme_color": "#FFFFFF",
   "description": "KKA Equipment repairs tracker application",
   "orientation": "any",
